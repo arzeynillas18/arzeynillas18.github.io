@@ -1,0 +1,195 @@
+body,
+html,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+div,
+a {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+ .logo-wrapper .logo {
+  width: 10rem;
+  height: 10rem;
+ 
+}
+
+.logo-wrapper > .logo > img {
+  width: 18rem;
+  height: 6rem;
+  position: relative;
+  bottom: 2rem;
+ 
+}
+
+.bck-img {
+  /* height: 100vh; */
+  position: relative;
+}
+
+.container {
+  width: 80%;
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding: 30px;
+}
+
+
+  .nav{
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+
+
+.nav > a {
+  font-size: 1.3rem;
+  line-height: 1.5rem;
+  margin-right: 40px;
+  color: rgb(255, 255, 255);
+  transition: all 150ms ease-in-out;
+}
+
+
+
+
+
+
+.nav > a:last-child {
+  margin-right: 0;
+}
+
+.nav > a:hover {
+  color: rgb(90, 187, 142);
+}
+
+.logo {
+  color: white;
+  transition: all 150ms ease-in-out;
+}
+.logo:hover {
+  color: rgb(179, 179, 179);
+}
+
+.header-background {
+  backdrop-filter: blur(6px);
+  height: 100px;
+}
+
+@media screen and (max-width: 768px) {
+  .bck-img{
+    top: -4.9rem;
+  }
+
+  .header,
+  .header-background {
+    display: none;
+  }
+}
+
+/* mob version  */
+
+.mob-open,
+.mob-close {
+  width: 30px;
+  height: 30px;
+  z-index: 2000;
+}
+
+.mob-menu {
+  display: none;
+}
+
+.mob-open {
+  position: fixed;
+  right: 30px;
+  top: 3rem;
+  width: 3.5rem;
+  background-color: transparent;
+  z-index: 2000;
+}
+
+.mob-list {
+  height: 100%;
+  width: 35%;
+  position: fixed;
+  right: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 45px;
+  background-color: #2d2d2d;
+  z-index: 1000;
+}
+
+.mob-list__item {
+  color: white;
+}
+
+.mob-list__item:first-child {
+  margin-bottom: 40px;
+}
+
+.mob-close {
+  position: fixed;
+  right: 30px;
+  top: 15px;
+  z-index: 5;
+}
+
+@media screen and (max-width: 768px) {
+  .mob-menu {
+    display: block;
+  }
+
+  .mob-open {
+    margin-top: -.5rem;
+  }
+}
+
+/* js */
+
+.opened {
+  opacity: 1;
+  animation: openAnim 200ms ease-in-out;
+}
+
+.close {
+  opacity: 0;
+  animation: closeAnim 200ms ease-in-out;
+}
+
+/* animation  */
+
+@keyframes openAnim {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes closeAnim {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
