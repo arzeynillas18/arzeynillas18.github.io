@@ -1,0 +1,135 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
+.bck-img {
+  background: url("../img/pp.jpg");
+  background-repeat: no-repeat;
+  background-size: cover; 
+  min-height: 100vh;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+}
+
+
+
+.title{
+ top:45%;
+ left: 50%;
+position:absolute;
+transform:  translate(-50%, -50%);
+width:75%;
+text-align: center;
+}
+
+.title h1{
+  font-size: 7rem;
+  color: #fff;
+  justify-content: center;
+  text-align: center;
+
+}
+p{
+ color: rgb(237, 243, 239);
+ font-size: 3rem;
+ position: relative;
+ top: 1rem;
+ font-style:italic;
+ margin-bottom: 310rem;
+}
+
+.discover-btn {
+  display: inline-block;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+  text-decoration: none;
+  font-family: sans-serif;
+  font-weight: 600;
+  font-size: 2em;
+  padding: 0.75em 1em;
+  color: rgb(40, 129, 52);
+  border: 0.15em solid rgb(59, 78, 66);
+  margin-top: 7rem;
+  border-radius: calc(0.75em + 0.5em + 0.15em);
+  transition: 4s;
+}
+
+.discover-btn > a {
+color:#354b3a
+}
+
+
+.discover-btn:before, .discover-btn:after {
+  content: "";
+  position: absolute;
+  top: -1.5em;
+  z-index: -1;
+  width: 200%;
+  aspect-ratio: 1;
+  border: none;
+  border-radius: 40%;
+  background-color: rgba(24, 114, 31, 0.25);
+  transition: 4s;
+}
+.discover-btn:before {
+  left: -80%;
+  transform: translate3d(0, 5em, 0) rotate(-340deg);
+}
+.discover-btn:after {
+  right: -80%;
+  transform: translate3d(0, 5em, 0) rotate(390deg);
+}
+.discover-btn:hover, .discover-btn:focus {
+  color: white;
+}
+.discover-btn:hover:before, .discover-btn:hover:after, .button:focus:before, .button:focus:after {
+  transform: none;
+  background-color: rgba(73, 99, 62, 0.75);
+}
+
+@media (max-width: 600px) { /* adjust font size for screens larger than 768px */
+  h1 {
+    font-size: 3em;
+    
+  }
+
+  p {
+    font-size: 2rem;
+    position: relative;
+    top: 6rem;
+  }
+
+  .discover-btn {
+    position: relative;
+    top: 5rem;
+  }
+}
+
+@media (max-width: 720px) { /* adjust font size for screens larger than 768px */
+  h1 {
+    font-size: 5rem;
+    position: relative;
+    top: 10rem;
+  }
+
+  p {
+    font-size: 2rem;
+    position: relative;
+    top: 10rem;
+  }
+
+  .discover-btn {
+    position: relative;
+    top: 5rem;
+  }
+}
+
+@media (max-width: 500px) { /* adjust font size for screens larger than 768px */
+ .bck-img {
+  height: 70rem;
+  overflow: hidden;
+ }
+
+
+}

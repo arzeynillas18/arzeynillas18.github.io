@@ -1,0 +1,250 @@
+<!--card-container-->
+<div class="card-container">
+    <div class="card">
+      <div class="icon"><ion-icon size="large" name="card"></ion-icon></i></div>
+      <h1><span>Budget-Friendly</span></h1>
+      <p>At Durano Eco Farm, you can enjoy an enjoyable vacation for a very little cost. You won't need to worry too much because you can be certain that your money will be worth it.</p>
+    </div>
+    <div class="card">
+      <div class="icon"><ion-icon size="large" name="flash"></ion-icon></i></div>
+      <h1><span>Relaxing</span></h1>
+      <p>You probably already know that free-flowing spring water is extremely clear, immaculate, and chilly enough to refresh you. This resort is one of many in Cebu that provides such great services.</p>
+    </div>
+    <div class="card">
+      <div class="icon"><ion-icon size="large" name="leaf"></ion-icon></i></div>
+      <h1><span>Eco-Friendly</span></h1>
+      <p>Durano Eco Farm Resort is an eco-farm in establishment that provides a variety of natural environments and wildlife that are being preserved and planted with different collections of plants and trees.</p>
+    </div>
+  </div>
+ 
+  <!-- <div class="title-about"> -->
+   <div class="title-about">
+    <h1>ABOUT</h1>
+    <p>The tranquil Durano Eco Farm and Spring Resort is located in Carmen, Cebu. Our eight multi-level pools, which
+      contain spring water from a nearby natural spring, provide cool relaxation amidst breathtaking panoramic views
+      of the natural world. We provide cozy lodgings at reasonable prices, including cottages, treehouses, and cabins
+      built for maximum comfort and enjoyment. Experience the peace and quiet at Durano Eco Farm and Spring Resort.
+    </p>
+  </div>
+  <!-- homemain -->
+
+  background: url("../img/DSCF9233.jpg") no-repeat center ;
+  background-size: cover;
+  min-height: 100vh;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+
+  <!-- css -->
+
+  .logo {
+    color: white;
+    transition: all 150ms ease-in-out;
+  }
+  .logo:hover {
+    color: rgb(179, 179, 179);
+  }
+  .title-about{
+    height: 19rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 8rem;
+
+
+  }
+  
+  .title-about > h1{
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 4rem;
+    color: #fff;
+    justify-content: center;
+    align-items: center;
+    margin-top:12rem
+  }
+
+  .title-about > p{
+    text-indent: 5rem;
+    text-align: center;
+    text-justify: inter-word;
+    color: #fff; 
+    font-size: 1.5rem;
+    position: relative;
+    top: 1.5rem;
+    margin: 0 1rem 8rem 1rem;
+  }
+  @media only screen and (min-width: 768px) {
+    .title-about > p  {
+      font-size: 18px;
+      line-height: 1.6;
+    }
+  }
+
+  @media only screen and (min-width: 992px) {
+    .title-about > p  {
+      font-size: 25px;
+      line-height: 1.7;
+    }
+    
+  }
+
+   .card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 10rem;
+    padding-top: 5rem;
+    margin-right: 6rem;
+    margin-left: 6rem;
+    
+    
+   }
+
+   .card {
+    margin: auto;
+    width: 310px;
+    height: 14rem;
+    background-color: rgb(42, 61, 50, 50%);
+    border: 0px solid #000000;
+    border-radius: 11px;
+    padding: 22px;
+    box-shadow: 0 0 10px rgba(253, 253, 253, 0.1);
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+   }
+   
+    .card > h1{
+      opacity: 100%;
+
+    }
+
+    .card > p{
+      opacity:100%;
+    }
+
+    .card > span{
+      opacity:100%;
+    }
+    
+  
+  
+  .icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #324136;
+    box-shadow: 10 0 5px rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(5px);
+    color: white;
+  }
+  
+  h1 {
+    font-size: 24px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    position: relative;
+    top: .5rem;
+  }
+  
+  h1 span {
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 5px;
+    margin-top: 2rem;
+  }
+  
+  p {
+    position: relative;
+    top: 1rem;
+    margin-top: 2rem;
+    font-size: 16px;
+    line-height: 1.5;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    text-justify: inter-word;
+  }
+   
+
+  .card:hover{
+    transform: scale(1.15);
+  }
+  
+  @media only screen and (max-width: 768px) {
+    .card-container {
+      flex-direction: column;
+    }
+    
+    .card {
+      width: 100%;
+      height: auto;
+    }
+    
+    .card-container h1 {
+      font-size: 20px;
+    }
+    
+    .card-container p{
+      font-size: 14px;
+    }
+  }
+  
+  @media only screen and (min-width: 768px) {
+    .card {
+      width: 200px;
+      height: 200px;
+    }
+    
+    .card-container h1 {
+      font-size: 24px;
+    }
+    
+    .card-container p{
+      font-size: 16px;
+    }
+    
+  }
+  
+  @media only screen and (min-width: 992px) {
+    .card {
+      width: 300px;
+      height: 300px;
+      font-size: 24px;
+    }
+    
+    .card-container h1{
+      font-size: 36px;
+      margin-top: 20px;
+    }
+    
+    .card-container p {
+      font-size: 18px;
+      margin-top: 30px;
+    }
+    }
+    
+    @media only screen and (min-width: 1200px) {
+    .card{
+    width: 400px;
+    height: 400px;
+    font-size: 28px;
+    }
+    
+    .card-container h1{
+    font-size: 48px;
+    margin-top: 40px;
+    }
+    
+    .card-container p{
+    font-size: 22px;
+    margin-top: 50px;
+    }
+    }
+  
+ 
