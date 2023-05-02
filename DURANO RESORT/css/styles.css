@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
 
 .bck-img {
-  background: url("..\img\VID3.gif");
+  background: url("../img/pp.jpg");
   background-repeat: no-repeat;
   background-size: cover; 
   min-height: 100vh;
