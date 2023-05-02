@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Durano Ecofarm Accommodations</title>
+    <link rel="stylesheet" href="./css/accomodation.css" />
+    <link rel="stylesheet" href="./css/navbar.css" />
+    <link rel="icon" type="image/x-icon" href="src\img/Logo only.png">
+  </head>
+  <body>
+    <main class="bck-img">
+      <div class="header-background">
+        <header class="header container">
+          <div class="logo-wrapper">
+            <a class="logo" href="index.html"><img src=".\img/Logo.png"></a>
+          </div>
+
+          <nav class="nav">
+            <a href="index.html">HOME</a>
+            <a href="about.html">ABOUT</a>
+            <a href="gallery.html">GALLERY</a>
+            <a href="accomodation.html">ACCOMODATION</a>
+            <a href="location.html">LOCATION</a>
+            <a href="reviews.html">REVIEWS</a>
+          </nav>
+        </header>
+      </div>
+
+      <div class="mob-menu">
+        <img class="mob-open" src="./svg/open.svg" alt="openSvg" />
+        <div class="mob-wrapper close">
+          <img src="./svg/close.svg" class="mob-close" alt="closeSvg" />
+          <div class="mob-list">
+            <a href="#" class="mob-list__item">LOGO</a>
+            <a href="/" class="mob-list__item">HOME</a>
+            <a href="./about.html" class="mob-list__item">ABOUT</a>
+            <a href="gallery.html" class="mob-list__item">GALLERY</a>
+            <a href="accomodation.html" class="mob-list__item">ACCOMODATION</a>
+            <a href="reviews.html" class="mob-list__item">REVIEWS</a>
+          </div>
+        </div>
+      </div>
+ 
+ 
+ 
+ 
+      <div class="main-container"> 
+      <div class="accommodations-title">
+        <h1>
+          ACCOMMODATIONS
+        </h1>
+
+      </div>
+
+  
+
+      <div class="card-container">
+        <div class="card">
+          <div id="images"><img name="show"></div>
+          <h1><span>Studio Type 1</span></h1>
+          <p>5 Pax.
+          </p>
+          <br>
+          <p>INCLUSIONS:</p>
+          <p>Air-conditionned</p>
+          <p>1 Queen-sized bed</p>
+          <p>1 Double-deck bed</p>
+          <br>
+          <p>RATE:</p>
+          <p>₱ 1,150 Per night</p>
+        </div>
+        <div class="card">
+          <div id="images"><img name="showTwo"></div>
+          <h1><span>Tree House</span></h1>
+          <p>8 Pax.
+          </p>
+          <br>
+          <p>INCLUSIONS:</p>
+          <p>Lounge area</p>
+          <p>Air-conditionned</p>
+          <p>Mini-Refrigerator</p>
+          <p>1 Single-bed</p>
+          <p>1 Queen-sized</p>
+          <p>1 Double-deck</p>
+          <br>
+          <p>RATE:</p>
+          <p>₱ 3,000 Per night</p>
+        </div>
+        <div class="card">
+          <div id="images"><img name="showThree"></div>
+          <h1><span>Studio Type 2</span></h1>
+          <p>5 Pax.
+          </p>
+          <br>
+          <p>INCLUSIONS:</p>
+          <p>Air-conditionned</p>
+          <p>1 Queen-sized bed</p>
+          <p>1 Single-bed</p>
+          <br>
+          <p>RATE:</p>
+          <p>₱ 1,150 Per night</p>
+        </div>
+      </div>
+
+    </div>
+    </main>
+
+    <script src="./js/menu.js"></script>
+
+    <script>
+      var photos = ['img/DSCF9425.jpg', 'img/DSCF9426.jpg','img/DSCF9429.jpg']
+      var photosTwo = ['img/DSCF9391.jpg', 'img/DSCF9417.jpg', 'img/DSCF9420.jpg']
+      var phtotosThree = ['img/DSCF9404.jpg', 'img/DSCF9432.jpg', 'img/bathroom2.jpg']
+      
+      
+      var i = 0;
+      
+      function slideshow() {
+        document.show.src = photos[i];
+        document.showTwo.src = photosTwo[i];
+        document.showThree.src = phtotosThree[i];
+
+        if (i < photos.length - 1) {
+          i++;
+        } else {
+          i = 0;
+        }
+  
+        setTimeout('slideshow()', 2000)
+      }
+
+      window.onload = slideshow;
+    </script>
+  </body>
+</html>
